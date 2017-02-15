@@ -1,0 +1,53 @@
+=======================
+Technical documentation
+=======================
+
+Timeout on sensors
+==================
+
+As all keys are not always returned by the teleinformation, a timeout has been defined only on the sensor for ADCO frame. This timeout has been set to 3 minutes. All other sensors timeouts are set to 0.
+
+xPL
+===
+
+This plugin does not use xPL anymore since the release 1.2.
+
+MQ
+==
+
+A **client.sensor** MQ message is sent with all the fields included in the teleinfo frame. Sample of a full frame : ::
+
+    {
+    adco=...
+    optarif=...
+    isousc=...
+    base=...
+    iinst=...
+    imax=...
+    motdetat=...
+    [hchc=...]
+    [hchp=...]
+    [ejphn=...]
+    [ejphpm=...]
+    [bbrhcjb=...]
+    [bbrhpjb=...]
+    [bbrhcjw=...]
+    [bbrhpjw=...]
+    [bbrhcjr=...]
+    [bbrhpjr=...]
+    [pejp=...]
+    [ptec=...]
+    [demain=...]
+    [adps=...]
+    [papp=...]
+    [hhphc=...]
+    [ppot=...]
+    [iinst1=...]
+    [iinst2=...]
+    [iinst3=...]
+    [imax1=...]
+    [imax2=...]
+    [imax3=...]
+    [pmax=...]
+    }
+

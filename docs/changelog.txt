@@ -1,0 +1,24 @@
+=========
+Changelog
+=========
+
+1.2
+===
+
+* Remove xPL parts to use only Domogik MQ (devices need to be recreated)
+
+1.1
+===
+
+* Improve logs for UTF8 (minor update)
+
+1.0
+===
+
+* Adapt the plugin to Domogik 0.4
+
+0.1
+===
+
+* Plugin creation
+

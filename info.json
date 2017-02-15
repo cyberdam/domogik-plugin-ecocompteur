@@ -1,0 +1,561 @@
+{
+    "json_version" : 2,
+    "identity": {
+        "author": "Cyberdam",
+        "author_email": "cyberdam at libertysurf.fr",
+        "tags": ["edf", "teleinfo", "electricity", "energy", "legrand"],
+        "dependencies": [],
+        "description": "Grab teleinformation informations from your Legrand ECO-Compteur",
+        "domogik_min_version": "0.5.0",
+        "name": "ecocompteur",
+        "type": "plugin",
+        "version": "1.0"
+    },
+    "configuration": [],
+    "device_types": {
+        "teleinfo.electric_meter": {
+            "description": "Teleinformation",
+            "id": "teleinfo.electric_meter",
+            "name": "Teleinformation",
+            "commands": [],
+            "sensors": ["data1", "data2", "data3", "data4", "data5", "data6", "data6m3", "data7", "data7m3", "adco", "optarif", "isousc", "base", "iinst", "imax", "motdetat", "hchc", "hchp", "ptec", "papp", "hhphc", "iinst1", "iinst2", "iinst3", "imax1", "imax2", "imax3", "adps", "ejphn", "ejphpm", "pejp", "bbrhcjb", "bbrhpjb", "bbrhcjw", "bbrhpjw", "bbrhcjr", "bbrhpjr"],
+            "parameters": [
+                {
+                    "key": "device",
+                    "xpl": false,
+                    "description": "The teleinformation module device ip (ex : 192.168.1.8).",
+                    "type": "string"
+                },
+                {
+                    "key": "interval",
+                    "xpl": false,
+                    "description": "The time in seconds between each check.",
+                    "type": "integer"
+                }
+            ]
+        }
+    },
+    "sensors": {
+		"data1": {
+            "name": "Data1",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data2": {
+            "name": "Data2",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data3": {
+            "name": "Data3",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data4": {
+            "name": "Data4",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data5": {
+            "name": "Data5",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data6": {
+            "name": "Data6",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data6m3": {
+            "name": "Data6m3",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data7": {
+            "name": "Data7",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+		"data7m3": {
+            "name": "Data7m3",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "adco": {
+            "name": "Electric meter address",
+            "data_type": "DT_String",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 180,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "optarif": {
+            "name": "Tariff option",
+            "data_type": "DT_String",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "isousc": {
+            "name": "Power subscribed",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "base": {
+            "name": "Base option index",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "iinst": {
+            "name": "Instant power",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "imax": {
+            "name": "Maximum power",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "motdetat": {
+            "name": "Counter status",
+            "data_type": "DT_String",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "hchc": {
+            "name": "Off peak hours index",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "hchp": {
+            "name": "Peak hours index",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "ptec": {
+            "name": "Current tariff period",
+            "data_type": "DT_String",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "papp": {
+            "name": "Apparent power",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "hhphc": {
+            "name": "Hourly group",
+            "data_type": "DT_String",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "iinst1": {
+            "name": "Instant power on phasis 1",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "iinst2": {
+            "name": "Instant power on phasis 2",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "iinst3": {
+            "name": "Instant power on phasis 3",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "imax1": {
+            "name": "Maximum power on phasis 1",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "imax2": {
+            "name": "Maximum power on phasis 2",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "imax3": {
+            "name": "Maximum power on phasis 3",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "adps": {
+            "name": "ADPS - power subscribed reached",
+            "data_type": "DT_Current",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "ejphn": {
+            "name": "Normal hours index if option = EJP",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "ejphpm": {
+            "name": "Peak hours index if option = EJP",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "pejp": {
+            "name": "EJP notice (30 minutes before the period) if option = EJP",
+            "data_type": "DT_Minute",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhcjb": {
+            "name": "Off peak hours index for blue days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhpjb": {
+            "name": "Peak hours index for blue days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhcjw": {
+            "name": "Off peak hours index for white days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhpjw": {
+            "name": "Peak hours index for white days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhcjr": {
+            "name": "Off peak hours index for red days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        },
+        "bbrhpjr": {
+            "name": "Peak hours index for red days if option = tempo",
+            "data_type": "DT_ActiveEnergy",
+            "conversion": "",
+            "incremental": false,
+            "timeout": 0,
+            "history": {
+                "store": true,
+                "duplicate": false,
+                "max": 0,
+                "expire": 0,
+                "round_value": 0
+            }
+        }
+    },
+    "xpl_stats": {},
+    "commands": {},
+    "xpl_commands": {}
+}
