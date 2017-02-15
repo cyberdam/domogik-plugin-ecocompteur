@@ -1,0 +1,42 @@
+2017-02-15 19:41:16,229 domogik-ecocompteur INFO Looking for launched instances of 'ecocompteur'
+2017-02-15 19:41:16,375 domogik-ecocompteur INFO No existing process.
+2017-02-15 19:41:16,385 domogik-ecocompteur INFO Starting the plugin in background...
+2017-02-15 19:41:18,363 domogik-ecocompteur INFO Daemonize plugin ecocompteur
+2017-02-15 19:41:18,368 domogik-ecocompteur DEBUG watcher fork
+2017-02-15 19:41:18,370 domogik-ecocompteur INFO ----------------------------------
+2017-02-15 19:41:18,372 domogik-ecocompteur INFO Starting client 'ecocompteur' (new manager instance)
+2017-02-15 19:41:18,373 domogik-ecocompteur INFO Python version is sys.version_info(major=2, minor=7, micro=9, releaselevel='final', serial=0)
+2017-02-15 19:41:18,384 domogik-ecocompteur DEBUG Send client status : starting
+2017-02-15 19:41:18,387 domogik-ecocompteur DEBUG Send client status : starting
+2017-02-15 19:41:18,408 domogik-ecocompteur DEBUG Write pid file for pid '23589' in file '/var/run/domogik/ecocompteur.pid'
+2017-02-15 19:41:18,409 domogik-ecocompteur INFO Read the json file and validate id
+2017-02-15 19:41:18,450 domogik-ecocompteur INFO The json file is valid
+2017-02-15 19:41:18,552 domogik-ecocompteur INFO Check if there are pictures for the defined products
+2017-02-15 19:41:18,553 domogik-ecocompteur INFO There is no products defined for this client
+2017-02-15 19:41:18,554 domogik-ecocompteur INFO End init of the global client part
+2017-02-15 19:41:18,555 domogik-ecocompteur INFO Retrieve the devices list for this client...
+2017-02-15 19:41:18,568 domogik-ecocompteur DEBUG Process informations|python_version=2.7|psutil_version=2.1.1|domogik_version=0.5.2|component=plugin-ecocompteur|component_version=1.0|pid=23589|cpu_percent_usage=0.0|memory_total=862.0|memory_percent_usage=1.5|memory_rss=12.0|memory_vsz=54.0|num_threads=5|num_file_descriptors_used=19|platform=armv7l|num_core=4|git_branch=|git_revision=
+2017-02-15 19:41:18,709 domogik-ecocompteur INFO - id : 15  /  name : ecocompteur  /  device type id : teleinfo.electric_meter
+2017-02-15 19:41:18,710 domogik-ecocompteur INFO   xpl_stats features :
+2017-02-15 19:41:18,711 domogik-ecocompteur INFO   xpl_commands features :
+2017-02-15 19:41:18,712 domogik-ecocompteur DEBUG Get parameter 'device'
+2017-02-15 19:41:18,713 domogik-ecocompteur DEBUG Parameter value found: 192.168.98.8
+2017-02-15 19:41:18,714 domogik-ecocompteur DEBUG Get parameter 'interval'
+2017-02-15 19:41:18,714 domogik-ecocompteur DEBUG Parameter value found: 60
+2017-02-15 19:41:18,715 domogik-ecocompteur INFO Start monitoring ecocompteur device '192.168.98.8'
+2017-02-15 19:41:18,718 domogik-ecocompteur DEBUG ==> URL API called for ecocompteur '192.168.98.8': 'http://192.168.98.8/inst.json'
+2017-02-15 19:41:18,747 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:41:18,754 domogik-ecocompteur INFO Start IOLoop for MQ : nothing else can be executed in the __init__ after this! Make sure that the self.ready() call is the last line of your init!!!!
+2017-02-15 19:41:18,790 domogik-ecocompteur DEBUG ==> EcoCompteur '192.168.98.8': analyse json {u'CIR1_Vol': 0.0, u'CIR2_Vol': 0.0, u'data7m3': 0.0, u'CIR2_Nrj': 0.0, u'heure': 20, u'CIR4_Vol': 0.0, u'CIR1_Nrj': 0.0, u'data6m3': 0.995, u'Date_Time': 1487191277, u'CIR3_Vol': 0.0, u'CIR4_Nrj': 0.0, u'minute': 41, u'data5': 304.0, u'data4': 4.0, u'data7': 0.0, u'data6': 0.995, u'data1': 67.0, u'CIR3_Nrj': 0.0, u'data3': 11.0, u'data2': 150.0}
+2017-02-15 19:41:18,791 domogik-ecocompteur INFO ==> Data1 '67.0'
+2017-02-15 19:41:18,792 domogik-ecocompteur INFO ==> Data2 '150.0'
+2017-02-15 19:41:18,793 domogik-ecocompteur INFO ==> Data3 '11.0'
+2017-02-15 19:41:18,794 domogik-ecocompteur INFO ==> Data4 '4.0'
+2017-02-15 19:41:18,799 domogik-ecocompteur INFO ==> Data5 '304.0'
+2017-02-15 19:41:33,391 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:41:53,287 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:42:08,289 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:42:18,573 domogik-ecocompteur DEBUG Process informations|python_version=2.7|psutil_version=2.1.1|domogik_version=0.5.2|component=plugin-ecocompteur|component_version=1.0|pid=23589|cpu_percent_usage=0.7|memory_total=862.0|memory_percent_usage=1.5|memory_rss=13.0|memory_vsz=65.0|num_threads=5|num_file_descriptors_used=19|platform=armv7l|num_core=4|git_branch=|git_revision=
+2017-02-15 19:42:23,290 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:42:38,900 domogik-ecocompteur DEBUG Send client status : alive
+2017-02-15 19:42:53,902 domogik-ecocompteur DEBUG Send client status : alive
